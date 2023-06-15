@@ -1,4 +1,6 @@
+
 #include <unistd.h>
+
 
 /**
  * main - Entry point
@@ -14,5 +16,7 @@ int main(void)
     if (write(2, str, len) != len)
         return (1);
 
+
     return (1);
+
 }    
