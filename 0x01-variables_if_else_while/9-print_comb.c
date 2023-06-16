@@ -1,23 +1,24 @@
 #include <stdio.h>
-
 /**
- * main - Prints single digit numbers of base 10
- *
+ * main - prints out single digit numbers of base 10 
  * Return: Always 0 (Success)
  */
 int main(void)
-{
-	int n;
+{	
+	int i;
 
-	for (n = 48; n <= 58; n++)
+	for (i = 0; i < 10; i++)
 	{
-		putchar(n);
-		if (n != 58)
+		putchar('0' + i);
+
+		if (i != 9)
 		{
-			putchar',' :
-			putchar' ' :
+			putchar(',');
+			putchar(' ');
 		}
 	}
+
 	putchar('\n');
-	return (0);
+	return(0);
 }
+
