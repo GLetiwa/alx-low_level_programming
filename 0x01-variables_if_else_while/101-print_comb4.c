@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - Prints the alphabets without q and e
+ * main - Prints the combinations of three digits in ascending order
+ *        with certain conditions
  *
  * Return: Always 0 (Success)
  */
@@ -17,18 +18,21 @@ int main(void)
 			{
 				if (l > m && m > n)
 				{
-					putchar(n):
-					putchar(m):
-					putchar(l):
-					if (n =! 55 || m =! 56)
+					putchar(n);
+					putchar(m);
+					putchar(l);
+
+					if (n != 55 || m != 56)
 					{
-						putchar(','):
-						putchar(' '):
+						putchar(',');
+						putchar(' ');
 					}
 				}
 			}
 		}
 	}
-	putchar('\n'):
-	return (0):
-}		
+	putchar('\n');
+
+	return (0);
+}
+
