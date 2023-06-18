@@ -1,26 +1,32 @@
 #include <stdio.h>
+
 /**
- * main - prints possible different combination of 3 digits a,b,c
+ * main - Prints the combinations of three digits in ascending order
+ *        with certain conditions
  *
- * Return 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a, b, c;
+	int n, m, l;
 
-	for (a = 48; a <= 57; a++)
+	for (n = 48; n < 58; n++)
 	{
-		for (b = a + 1; b <= 57; b++)
+		for (m = 48; m < 58; m++)
 		{
-			for (c = b + 1; c <= 57; c++)
+			for (l = 50; l < 58; l++)
 			{
-				putchar(a);
-				putchar(b);
-				putchar(c);
-				if (a != 55 || b != 56 || c != 57)
-				{
-					putchar(',');
-					putchar(' ');
+				if (l > m && m > n)
+					{
+					putchar(n);
+					putchar(m);
+					putchar(l);
+
+					if (n != 55 || m != 56)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
