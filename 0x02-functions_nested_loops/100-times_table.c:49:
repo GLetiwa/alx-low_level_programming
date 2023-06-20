@@ -1,0 +1,2 @@
+_table.c:50: WARNING: More than 40 lines in a function
+100-times_table.c:51: WARNING: More than 40 lines in a function
