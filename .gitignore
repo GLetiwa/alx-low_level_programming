@@ -8,3 +8,5 @@ main.c
 #putchar files
 _putchar.c
 
+#a.out files
+*.out
