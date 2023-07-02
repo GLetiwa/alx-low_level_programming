@@ -1,0 +1,10 @@
+#swap files
+*.swp
+
+#main.c files
+*-main.c
+main.c
+
+#putchar files
+_putchar.c
+
