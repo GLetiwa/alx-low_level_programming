@@ -61,7 +61,7 @@ char *_strdup(char *s)
 
 	for (i = 0; i < len; i++)
 		dup_s[i] = s[i];
-	dup_s[len] = '\0';
+	
 
 	return (dup_s);
 }
