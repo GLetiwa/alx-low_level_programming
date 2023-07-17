@@ -59,7 +59,7 @@ char *_strdup(char *s)
 	if (dup_s == NULL)
 		return (NULL);
 
-	for (i = 0; i <= len; i++)
+	for (i = 0; i < len; i++)
 		dup_s[i] = s[i];
 	return (dup_s);
 }
