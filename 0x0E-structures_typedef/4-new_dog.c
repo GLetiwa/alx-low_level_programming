@@ -55,13 +55,13 @@ char *_strdup(char *s)
 	if (s == NULL)
 		return (NULL);
 	len = strlen(s);
-	dup_s = (char *)malloc((len + 1) * sizeof(char));
+	dup_s = malloc((len + 1) * sizeof(char));
 	if (dup_s == NULL)
 		return (NULL);
 
 	for (i = 0; i < len; i++)
 		dup_s[i] = s[i];
-	dup_s = ('\0');
+	dup_s = '\0';
 	return (dup_s);
 }
 
@@ -76,7 +76,9 @@ int _strlen(char *s)
 	int len = 0;
 
 	while (s[len] != '\0')
+	{
 		len++;
+	}
 
 	return (len);
 }
