@@ -3,7 +3,7 @@
 void printb4_main(void) __attribute__((constructor));
 
 /**
- * _prints - prints a sentence before main
+ * printb4_main - prints a sentence before main
  * function is executed
  */
 
