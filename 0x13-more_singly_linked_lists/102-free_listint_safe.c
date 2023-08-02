@@ -14,22 +14,22 @@ size_t free_listint_safe(listint_t **h)
 
 	ptr = *h;
 
-	if (h == NULL)
+	if (h == NULL || *h == NULL)
 		return (0);
 	while (ptr != NULL)
 	{
 		size++;
-		tmp = ptr;
-		ptr = ptr->next;
-		free(tmp);
+		tmp = ptr->next;
+		free(ptr);
 
 		if (tmp >= ptr)
 		{
 			*h = NULL;
-			break;
+			return (size);
 		}
 
+		ptr = tmp;
 	}
-
+	*h = NULL;
 	return (size);
 }
